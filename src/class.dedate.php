@@ -17,6 +17,16 @@ class Dedate
             return idate($key, $this->timestamp);
         }
 
+        // Build a theoretical method name.
+        $method = 'is' . ucfirst($key);
+
+        // Check if the above method actually exists in this class.
+        if(method_exists($this, $method)) {
+            // Return the method.
+            return $this->$method();
+        }
+
+        // If all else fails, just return FALSE. Not exceptions here.
         return FALSE;
     }
 
