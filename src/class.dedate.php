@@ -13,6 +13,10 @@ class Dedate
 
     public function __get($key)
     {
+        if(in_array($key, ['B', 'd', 'H', 'i', 'm', 'w', 'Y', 'z'])) {
+            return idate($key, $this->timestamp);
+        }
+
         return FALSE;
     }
 
@@ -26,5 +30,4 @@ class Dedate
     {
         return date($this->format, $this->timestamp);
     }
-
 }
