@@ -268,6 +268,7 @@ class Dedate
         return $this->Y >= 2002 AND $this->z === 256;
     }
 
+    // Wiki: https://en.wikipedia.org/wiki/Remembrance_of_the_Dead
     public function isRemembranceOfTheDead()
     {
         return $this->m === 5 AND $this->d === 4;
