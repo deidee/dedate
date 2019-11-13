@@ -32,6 +32,7 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 ### Feestdagen
 
 - [x] [Bevrijdingsdag](https://nl.wikipedia.org/wiki/Bevrijdingsdag)
+- [ ] [Divali](https://nl.wikipedia.org/wiki/Divali)
 - [x] Eerste kerstdag
 - [x] [_Groundhog Day_](https://nl.wikipedia.org/wiki/Groundhog_Day_(feestdag))
 - [x] [_Halloween_](https://nl.wikipedia.org/wiki/Halloween)
@@ -44,6 +45,8 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 
 - [x] [1 april](https://nl.wikipedia.org/wiki/1_aprilgrap)
 - [x] [Caps lockdag](https://nl.wikipedia.org/wiki/Caps_lock#Internationale_Caps_lockdag)
+- [ ] _Comic Sans Day_
+- [ ] [_CSS Naked Day_](https://web.archive.org/web/20120317143559/http://naked.dustindiaz.com/)
 - [x] [Dodenherdenking](https://nl.wikipedia.org/wiki/Nationale_Dodenherdenking)
 - [x] [_International Jazz Day_](https://en.wikipedia.org/wiki/International_Jazz_Day)
 - [x] [_International Mother Earth Day_](https://en.wikipedia.org/wiki/International_Mother_Earth_Day)
@@ -51,6 +54,7 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 - [x] [_International Women's Day_](https://en.wikipedia.org/wiki/International_Women%27s_Day)
 - [x] [Internationale Dag van de Persvrijheid](https://nl.wikipedia.org/wiki/Internationale_Dag_van_de_Persvrijheid)
 - [x] [Nieuwjaar](https://nl.wikipedia.org/wiki/Nieuwjaar)
+- [ ] Oudejaarsavond
 - [x] [Pi-dag](https://nl.wikipedia.org/wiki/Pi-dag)
 - [x] _Play God Day_
 - [x] [Programmeursdag](https://nl.wikipedia.org/wiki/Programmeursdag)
