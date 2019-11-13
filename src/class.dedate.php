@@ -46,4 +46,14 @@ class Dedate
     {
         return $this->H === 13 && $this->i === 37;
     }
+
+    public function isAprilFools()
+    {
+        return $this->m === 4 && $this->d === 1;
+    }
+
+    public function isAprilFoolsDay()
+    {
+        return $this->aprilFools;
+    }
 }
