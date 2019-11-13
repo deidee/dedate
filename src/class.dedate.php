@@ -30,4 +30,10 @@ class Dedate
     {
         return date($this->format, $this->timestamp);
     }
+
+    // Wiki: https://www.urbandictionary.com/define.php?term=1337%20time
+    public function is1337Time()
+    {
+        return $this->H === 13 && $this->i === 37;
+    }
 }
