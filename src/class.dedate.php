@@ -235,6 +235,12 @@ class Dedate
         return $this->m === 1 AND $this->d === 1;
     }
 
+    // Wiki: https://en.wikipedia.org/wiki/New_Year%27s_Eve
+    public function isNewYearsEve()
+    {
+        return $this->m === 12 AND $this->d === 31;
+    }
+
     public function isNovember()
     {
         return $this->m === 11;

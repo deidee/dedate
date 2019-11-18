@@ -53,21 +53,28 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 - [x] [_International Talk Like a Pirate Day_](https://en.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day)
 - [x] [_International Women's Day_](https://en.wikipedia.org/wiki/International_Women%27s_Day)
 - [x] [Internationale Dag van de Persvrijheid](https://nl.wikipedia.org/wiki/Internationale_Dag_van_de_Persvrijheid)
+- [ ] Moederdag
 - [x] [Nieuwjaar](https://nl.wikipedia.org/wiki/Nieuwjaar)
-- [ ] Oudejaarsavond
+- [x] [Oudejaarsavond](https://en.wikipedia.org/wiki/New_Year%27s_Eve)
 - [x] [Pi-dag](https://nl.wikipedia.org/wiki/Pi-dag)
 - [x] _Play God Day_
 - [x] [Programmeursdag](https://nl.wikipedia.org/wiki/Programmeursdag)
 - [x] [_Steak and Blowjob Day_](https://en.wikipedia.org/wiki/Steak_and_Blowjob_Day)
+- [ ] Vaderdag
 - [x] [Valentijnsdag](https://nl.wikipedia.org/wiki/Valentijnsdag)
+- [x] Verjaardag (oprichter)
 - [x] [Wereldaidsdag](https://nl.wikipedia.org/wiki/Wereldaidsdag)
 - [x] [Wereldwaterdag](https://nl.wikipedia.org/wiki/Wereldwaterdag)
 
 ### Overige special momenten
 
 - [x] [_1337-time_](https://nl.wikipedia.org/wiki/Leet)
+- [ ] Avond
 - [x] Borstkankermaand
+- [ ] Middag
 - [x] [Movember](https://nl.movember.com/)
+- [ ] Nacht
+- [ ] Ochtend
 - [x] [_Prosecco Friday_](https://proseccofriday.com/)
 - [x] Schikkeljaar
 - [x] Weekend
