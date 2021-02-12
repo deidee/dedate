@@ -92,6 +92,13 @@ class Dedate
         return $this->m === 12 AND $this->d === 25;
     }
 
+	public function isFathersDay()
+	{
+		$fathersday = date('Y-m-d', strtotime("Third Sunday of June", $this->timestamp));
+
+		return date('Y-m-d', $this->timestamp) === $fathersday;
+	}
+
     public function isFriday()
     {
         return $this->w === 5;

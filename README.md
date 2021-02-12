@@ -60,7 +60,7 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 - [x] _Play God Day_
 - [x] [Programmeursdag](https://nl.wikipedia.org/wiki/Programmeursdag)
 - [x] [_Steak and Blowjob Day_](https://en.wikipedia.org/wiki/Steak_and_Blowjob_Day)
-- [ ] Vaderdag
+- [x] [Vaderdag](https://nl.wikipedia.org/wiki/Vaderdag)
 - [x] [Valentijnsdag](https://nl.wikipedia.org/wiki/Valentijnsdag)
 - [x] Verjaardag (oprichter)
 - [x] [Wereldaidsdag](https://nl.wikipedia.org/wiki/Wereldaidsdag)
