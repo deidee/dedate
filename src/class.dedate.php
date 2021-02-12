@@ -220,6 +220,13 @@ class Dedate
         return $this->w === 1;
     }
 
+    public function isMothersDay()
+    {
+    	$mothersday = date('Y-m-d', strtotime("Second Sunday of May", $this->timestamp));
+
+    	return date('Y-m-d', $this->timestamp) === $mothersday;
+    }
+
     public function isMovember()
     {
         return $this->isNovember();

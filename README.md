@@ -53,7 +53,7 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 - [x] [_International Talk Like a Pirate Day_](https://en.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day)
 - [x] [_International Women's Day_](https://en.wikipedia.org/wiki/International_Women%27s_Day)
 - [x] [Internationale Dag van de Persvrijheid](https://nl.wikipedia.org/wiki/Internationale_Dag_van_de_Persvrijheid)
-- [ ] Moederdag
+- [x] [Moederdag](https://nl.wikipedia.org/wiki/Moederdag)
 - [x] [Nieuwjaar](https://nl.wikipedia.org/wiki/Nieuwjaar)
 - [x] [Oudejaarsavond](https://en.wikipedia.org/wiki/New_Year%27s_Eve)
 - [x] [Pi-dag](https://nl.wikipedia.org/wiki/Pi-dag)
