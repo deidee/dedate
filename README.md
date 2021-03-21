@@ -46,7 +46,7 @@ Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 - [x] [1 april](https://nl.wikipedia.org/wiki/1_aprilgrap)
 - [x] [Caps lockdag](https://nl.wikipedia.org/wiki/Caps_lock#Internationale_Caps_lockdag)
 - [ ] _Comic Sans Day_
-- [ ] [_CSS Naked Day_](https://web.archive.org/web/20120317143559/http://naked.dustindiaz.com/)
+- [x] [_CSS Naked Day_](https://web.archive.org/web/20120317143559/http://naked.dustindiaz.com/)
 - [x] [Dodenherdenking](https://nl.wikipedia.org/wiki/Nationale_Dodenherdenking)
 - [x] [_International Jazz Day_](https://en.wikipedia.org/wiki/International_Jazz_Day)
 - [x] [_International Mother Earth Day_](https://en.wikipedia.org/wiki/International_Mother_Earth_Day)

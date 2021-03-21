@@ -102,6 +102,15 @@ class Dedate
         return $this->m === 12 AND $this->d === 25;
     }
 
+    // See https://css-naked-day.github.io/.
+    public function isCSSNakedDay(): bool
+    {
+        $start = date('U', mktime(-12, 0, 0, 4, 9, date('Y')));
+        $end = date('U', mktime(36, 0, 0, 4, 9, date('Y')));
+
+        return $this->timestamp >= $start && $this->timestamp <= $end;
+    }
+
     // https://en.wikipedia.org/wiki/Evening
     // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Avond.
     public function isEvening(): bool
