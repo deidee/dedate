@@ -56,6 +56,13 @@ class Dedate
         return $this->is1337();
     }
 
+    // https://en.wikipedia.org/wiki/Afternoon
+    // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Middag_(tijd).
+    public function isAfternoon(): bool
+    {
+        return $this->H >= 12 AND $this->H < 18;
+    }
+
     // Wiki: https://en.wikipedia.org/wiki/April_Fools%27_Day
     public function isAprilFools()
     {
@@ -93,6 +100,13 @@ class Dedate
     public function isChristmas()
     {
         return $this->m === 12 AND $this->d === 25;
+    }
+
+    // https://en.wikipedia.org/wiki/Evening
+    // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Avond.
+    public function isEvening(): bool
+    {
+        return $this->H >= 18 AND $this->H <= 23;
     }
 
 	public function isFathersDay()
@@ -141,6 +155,13 @@ class Dedate
     public function isInternationalMotherEarthDay()
     {
         return $this->m === 4 AND $this->d === 22;
+    }
+
+    // https://en.wikipedia.org/wiki/Morning
+    // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Ochtend.
+    public function isMorning(): bool
+    {
+        return $this->H >= 6 AND $this->H < 12;
     }
 
     public function isMotherEarthDay()
@@ -235,6 +256,13 @@ class Dedate
     	$mothersday = date('Y-m-d', strtotime("Second Sunday of May", $this->timestamp));
 
     	return date('Y-m-d', $this->timestamp) === $mothersday;
+    }
+
+    // https://en.wikipedia.org/wiki/Night
+    // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Nacht.
+    public function isNight(): bool
+    {
+        return $this->H >= 0 AND $this->H < 6;
     }
 
     public function isMovember()
