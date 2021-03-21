@@ -45,13 +45,13 @@ class Dedate
     }
 
     // Wiki: https://www.urbandictionary.com/define.php?term=1337%20time
-    public function is1337()
+    public function is1337(): bool
     {
         return $this->H === 13 AND $this->i === 37;
     }
 
     // Wiki: https://www.urbandictionary.com/define.php?term=1337%20time
-    public function is1337Time()
+    public function is1337Time(): bool
     {
         return $this->is1337();
     }
@@ -64,40 +64,40 @@ class Dedate
     }
 
     // Wiki: https://en.wikipedia.org/wiki/April_Fools%27_Day
-    public function isAprilFools()
+    public function isAprilFools(): bool
     {
         return $this->m === 4 AND $this->d === 1;
     }
 
-    public function isAprilFoolsDay()
+    public function isAprilFoolsDay(): bool
     {
         return $this->isAprilFools();
     }
 
     // Wiki: https://nl.wikipedia.org/wiki/Bevrijdingsdag
-    public function isBevrijdingsdag()
+    public function isBevrijdingsdag(): bool
     {
         return $this->m === 5 AND $this->d === 5;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Breast_Cancer_Awareness_Month
-    public function isBreastCancerAwarenessMonth()
+    public function isBreastCancerAwarenessMonth(): bool
     {
         return $this->isOctober();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Caps_Lock#International_Caps_Lock_Day
-    public function isCapsLockDay()
+    public function isCapsLockDay(): bool
     {
         return $this->m === 10 AND $this->d === 22;
     }
 
-    public function isInternationalCapsLockDay()
+    public function isInternationalCapsLockDay(): bool
     {
         return $this->isCapsLockDay();
     }
 
-    public function isChristmas()
+    public function isChristmas(): bool
     {
         return $this->m === 12 AND $this->d === 25;
     }
@@ -109,50 +109,50 @@ class Dedate
         return $this->H >= 18 AND $this->H <= 23;
     }
 
-	public function isFathersDay()
-	{
+	public function isFathersDay(): bool
+    {
 		$fathersday = date('Y-m-d', strtotime("Third Sunday of June", $this->timestamp));
 
 		return date('Y-m-d', $this->timestamp) === $fathersday;
 	}
 
-    public function isFriday()
+    public function isFriday(): bool
     {
         return $this->w === 5;
     }
 
     // Site: https://proseccofriday.com/
-    public function isProseccoFriday()
+    public function isProseccoFriday(): bool
     {
         return $this->isFriday();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Groundhog_Day
-    public function isGroundhogDay()
+    public function isGroundhogDay(): bool
     {
         return $this->m === 2 AND $this->d === 2;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Halloween
-    public function isHalloween()
+    public function isHalloween(): bool
     {
         return $this->isOctober() AND $this->d === 31;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Jazz_Day
-    public function isInternationalJazzDay()
+    public function isInternationalJazzDay(): bool
     {
         return $this->m === 4 AND $this->d === 30;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Jazz_Day
-    public function isJazzDay()
+    public function isJazzDay(): bool
     {
         return $this->isInternationalJazzDay();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Mother_Earth_Day
-    public function isInternationalMotherEarthDay()
+    public function isInternationalMotherEarthDay(): bool
     {
         return $this->m === 4 AND $this->d === 22;
     }
@@ -164,94 +164,94 @@ class Dedate
         return $this->H >= 6 AND $this->H < 12;
     }
 
-    public function isMotherEarthDay()
+    public function isMotherEarthDay(): bool
     {
         return $this->isInternationalMotherEarthDay();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day
-    public function isInternationalTalkLikeAPirateDay()
+    public function isInternationalTalkLikeAPirateDay(): bool
     {
         return $this->m === 9 AND $this->d === 19;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day
-    public function isTalkLikeAPirateDay()
+    public function isTalkLikeAPirateDay(): bool
     {
         return $this->isInternationalTalkLikeAPirateDay();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Women%27s_Day
-    public function isInternationalWomensDay()
+    public function isInternationalWomensDay(): bool
     {
         return $this->m === 3 AND $this->d === 8;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/International_Women%27s_Day
-    public function isWomensDay()
+    public function isWomensDay(): bool
     {
         return $this->isInternationalWomensDay();
     }
 
-    public function isJanuary()
+    public function isJanuary(): bool
     {
         return $this->m === 1;
     }
 
-    public function isJuly()
+    public function isJuly(): bool
     {
         return $this->m === 7;
     }
 
-    public function isJune()
+    public function isJune(): bool
     {
         return $this->m === 6;
     }
 
-    public function isKingsDay()
+    public function isKingsDay(): bool
     {
         return $this->isKoningsdag();
     }
 
-    public function isKoninginnedag()
+    public function isKoninginnedag(): bool
     {
         return $this->isKoningsdag();
     }
 
     // Wiki: https://nl.wikipedia.org/wiki/Koningsdag_(Nederland)
-    public function isKoningsdag()
+    public function isKoningsdag(): bool
     {
         return $this->m === 4 AND (($this->d === 27 AND $this->w !== 0) || ($this->d === 26 AND $this->w === 6));
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Leap_year
-    public function isLeapYear()
+    public function isLeapYear(): bool
     {
         return (bool) $this->L;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Liberation_Day_(Netherlands)
-    public function isLiberationDay()
+    public function isLiberationDay(): bool
     {
         return $this->isBevrijdingsdag();
     }
 
-    public function isMarch()
+    public function isMarch(): bool
     {
         return $this->m === 3;
     }
 
-    public function isMay()
+    public function isMay(): bool
     {
         return $this->m === 5;
     }
 
-    public function isMonday()
+    public function isMonday(): bool
     {
         return $this->w === 1;
     }
 
-    public function isMothersDay()
+    public function isMothersDay(): bool
     {
     	$mothersday = date('Y-m-d', strtotime("Second Sunday of May", $this->timestamp));
 
@@ -265,135 +265,135 @@ class Dedate
         return $this->H >= 0 AND $this->H < 6;
     }
 
-    public function isMovember()
+    public function isMovember(): bool
     {
         return $this->isNovember();
     }
 
-    public function isMyBirthday()
+    public function isMyBirthday(): bool
     {
         return $this->m === 8 AND $this->d === 29;
     }
 
-    public function isNewYearsDay()
+    public function isNewYearsDay(): bool
     {
         return $this->m === 1 AND $this->d === 1;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/New_Year%27s_Eve
-    public function isNewYearsEve()
+    public function isNewYearsEve(): bool
     {
         return $this->m === 12 AND $this->d === 31;
     }
 
-    public function isNovember()
+    public function isNovember(): bool
     {
         return $this->m === 11;
     }
 
-    public function isOctober()
+    public function isOctober(): bool
     {
         return $this->m === 10;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Pi_Day
     // Site: https://www.piday.org/
-    public function isPiDay()
+    public function isPiDay(): bool
     {
         return $this->m === 3 AND $this->d === 14;
     }
 
-    public function isPlayGodDay()
+    public function isPlayGodDay(): bool
     {
         return $this->m === 1 AND $this->d === 9;
     }
 
-    public function isPrinsessedag()
+    public function isPrinsessedag(): bool
     {
         return $this->isKoningsdag();
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Programmers'_Day
-    public function isProgrammersDay()
+    public function isProgrammersDay(): bool
     {
         return $this->Y >= 2002 AND $this->z === 256;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/Remembrance_of_the_Dead
-    public function isRemembranceOfTheDead()
+    public function isRemembranceOfTheDead(): bool
     {
         return $this->m === 5 AND $this->d === 4;
     }
 
-    public function isSaturday()
+    public function isSaturday(): bool
     {
         return $this->w === 6;
     }
 
-    public function isSeptember()
+    public function isSeptember(): bool
     {
         return $this->m === 9;
     }
 
-    public function isSteakAndBJDay()
+    public function isSteakAndBJDay(): bool
     {
         return $this->m === 3 AND $this->d === 14;
     }
 
-    public function isSunday()
+    public function isSunday(): bool
     {
         return $this->w === 0;
     }
 
-    public function isTheFirst()
+    public function isTheFirst(): bool
     {
         return $this->d === 1;
     }
 
-    public function isThursday()
+    public function isThursday(): bool
     {
         return $this->w === 4;
     }
 
-    public function isTuesday()
+    public function isTuesday(): bool
     {
         return $this->w === 2;
     }
 
-    public function isValentines()
+    public function isValentines(): bool
     {
         return $this->isValentinesDay();
     }
 
-    public function isValentinesDay()
+    public function isValentinesDay(): bool
     {
         return $this->m === 2 AND $this->d === 14;
     }
 
-    public function isWeekend()
+    public function isWeekend(): bool
     {
         return $this->isSaturday() || $this->isSunday();
     }
 
-    public function isWednesday()
+    public function isWednesday(): bool
     {
         return $this->w === 3;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/World_AIDS_Day
-    public function isWorldAidsDay()
+    public function isWorldAidsDay(): bool
     {
         return $this->Y >= 1988 AND $this->m === 12 AND $this->d === 1;
     }
 
     // Wiki: https://en.wikipedia.org/wiki/World_Press_Freedom_Day
-    public function isWorldPressFreedomDay()
+    public function isWorldPressFreedomDay(): bool
     {
         return ($this->m === 5 AND $this->d === 3);
     }
 
     // Wiki: https://en.wikipedia.org/wiki/World_Water_Day
-    public function isWorldWaterDay()
+    public function isWorldWaterDay(): bool
     {
         return $this->m === 3 AND $this->d === 22;
     }
