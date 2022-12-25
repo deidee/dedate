@@ -1,8 +1,13 @@
 {
     "name": "deidee/dedate",
     "description": "Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.",
-    "type": "project",
+    "type": "library",
     "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "deidee\\Dedate\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "ACJ",

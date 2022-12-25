@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace deidee;
+require_once dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
-require_once '../src/class.dedate.php';
+use deidee\Dedate\Dedate;
 
 $dedate = new Dedate;
 // Should return TRUE only when the (server) time is 13:37.
