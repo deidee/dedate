@@ -102,11 +102,18 @@ class Dedate
         return $this->m === 12 AND $this->d === 25;
     }
 
+    public function isComicSansDay(): bool
+    {
+        $firstFriday = strtotime('first fri of this month', $this->timestamp);
+
+        return $this->m === 7 AND ($this->d == date('d', $firstFriday));
+    }
+
     // See https://css-naked-day.github.io/.
     public function isCSSNakedDay(): bool
     {
-        $start = date('U', mktime(-12, 0, 0, 4, 9, date('Y')));
-        $end = date('U', mktime(36, 0, 0, 4, 9, date('Y')));
+        $start = date('U', mktime(-12, 0, 0, 4, 9, idate('Y')));
+        $end = date('U', mktime(36, 0, 0, 4, 9, idate('Y')));
 
         return $this->timestamp >= $start && $this->timestamp <= $end;
     }
