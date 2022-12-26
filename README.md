@@ -2,6 +2,22 @@
 
 Een bibliotheek om te checken of een datum op een bepaalde speciale dag valt.
 
+## Installatie
+
+```shell
+composer require deidee/dedate
+```
+
+## Gebruik
+
+```php
+use deidee\Dedate\Dedate;
+
+$dedate = new Dedate;
+
+var_dump($dedate->isComicSansDay());
+```
+
 ## Checks
 
 ### Dagen van de week

@@ -63,6 +63,11 @@ class Dedate
         return $this->H >= 12 AND $this->H < 18;
     }
 
+    public function isApril(): bool
+    {
+        return $this->m === 4;
+    }
+
     // Wiki: https://en.wikipedia.org/wiki/April_Fools%27_Day
     public function isAprilFools(): bool
     {
@@ -72,6 +77,11 @@ class Dedate
     public function isAprilFoolsDay(): bool
     {
         return $this->isAprilFools();
+    }
+
+    public function isAugust(): bool
+    {
+        return $this->m === 8;
     }
 
     // Wiki: https://nl.wikipedia.org/wiki/Bevrijdingsdag
@@ -118,6 +128,11 @@ class Dedate
         return $this->timestamp >= $start && $this->timestamp <= $end;
     }
 
+    public function isDecember(): bool
+    {
+        return $this->m === 12;
+    }
+
     // https://en.wikipedia.org/wiki/Evening
     // Opinionated. Perhaps somewhat local. Also see https://nl.wikipedia.org/wiki/Avond.
     public function isEvening(): bool
@@ -131,6 +146,11 @@ class Dedate
 
 		return date('Y-m-d', $this->timestamp) === $fathersday;
 	}
+
+    public function isFebruary(): bool
+    {
+        return $this->m === 2;
+    }
 
     public function isFriday(): bool
     {
@@ -171,6 +191,11 @@ class Dedate
     public function isInternationalMotherEarthDay(): bool
     {
         return $this->m === 4 AND $this->d === 22;
+    }
+
+    public function isMarch(): bool
+    {
+        return $this->m === 3;
     }
 
     // https://en.wikipedia.org/wiki/Morning
@@ -250,11 +275,6 @@ class Dedate
     public function isLiberationDay(): bool
     {
         return $this->isBevrijdingsdag();
-    }
-
-    public function isMarch(): bool
-    {
-        return $this->m === 3;
     }
 
     public function isMay(): bool
